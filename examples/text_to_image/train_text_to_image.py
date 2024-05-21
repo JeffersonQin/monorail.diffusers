@@ -1111,6 +1111,7 @@ def main():
             save_model_card(args, repo_id, images, repo_folder=args.output_dir)
             upload_folder(
                 repo_id=repo_id,
+                path_in_repo=args.output_dir,
                 folder_path=args.output_dir,
                 commit_message="End of training",
                 ignore_patterns=["step_*", "epoch_*"],
