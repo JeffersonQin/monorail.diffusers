@@ -1114,7 +1114,7 @@ def main():
                 path_in_repo=args.output_dir,
                 folder_path=args.output_dir,
                 commit_message="End of training",
-                ignore_patterns=["step_*", "epoch_*"],
+                ignore_patterns=["step_*", "epoch_*", "checkpoint-*"],
             )
 
     accelerator.end_training()
